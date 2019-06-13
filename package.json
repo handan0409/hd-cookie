@@ -1,14 +1,14 @@
 {
   "name": "hd-cookie",
-  "version": "0.0.1",
-  "description": "第一个npm包",
+  "version": "0.0.3",
+  "description": "cookie的简易操作",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/handan0409"
+    "url": "https://github.com/handan0409/hd-cookie"
   },
   "keywords": [
     "handan"
