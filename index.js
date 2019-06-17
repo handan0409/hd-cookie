@@ -57,9 +57,16 @@ const getCookieName = (cookie_name, name) => {
   if (!cookie_val) {
     return '';
   }
-  let regex = new RegExp('[?|&|"]?' + escape(name) + '=([^&#]*)("|&|#)');
-  let value = (cookie_val.match(regex) || ["", ""])[1];
-  return unescape(value);
+  if(!name){
+    return cookie_val;
+  }
+  let regex = new RegExp(`(^|&|#||'|"[?])` + escape(name) + `=([^&#'"]*)(&|#|'|"|$)`);
+  let value ;
+  if(value = cookie_val.match(regex)){
+    return unescape(value[2])
+  }else{
+    return null;
+  }
 }
 
 // 删除cookie，把时间清除到当前时间的前一天
@@ -73,7 +80,7 @@ const delCookie = (name) => {
 
 
 
-export default {
+module.exports = {
   setCookie,
   getCookie,
   getCookieName,

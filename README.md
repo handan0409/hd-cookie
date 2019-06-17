@@ -21,12 +21,12 @@ setCookie(“张三”, “123”, 31)
 ```
 
 ### 2、对cookie的获取操作
-方法：GetCookie(name)
+方法：getCookie(name)
 参数1：name => cookie的key值
 
 ### 3、对cookie的获取出来的值做进一步筛选
 比如，一条cookie信息是这样的"UID=5969153234234&UN=张三&TT=asdf8sd8fs9dfjsdfkjs9"，从中筛选出UID的值
-方法：GetCookie(cookie_name, name)
+方法：getCookieName(cookie_name, name)
 参数1：cookie_name => cookie的key值
 参数2: 二级key值
 
