@@ -193,7 +193,7 @@ Cookie.setCookie = setCookie ;
 Cookie.getCookie = getCookie ;
 Cookie.getCookieName = getCookieName ;
 Cookie.delCookie = delCookie ;
-
+/*********************************************兼容之前版本*********************************************************** */
 
 
 module.exports = Cookie ;
