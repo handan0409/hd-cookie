@@ -14,7 +14,7 @@ import Cookie from "hd-cookie"
 ## 使用方法介绍
 
 提供了4种常用的方法：存储cookie ，获取cookie，获取二级cookie ，删除cookie 4中操作. <br />
-new Cookie(options)&nbsp;&nbsp;---&nbsp;&nbsp;options配置实例默认值，选填参数} <br />
+new Cookie(options)&nbsp;&nbsp;---&nbsp;&nbsp;options配置实例默认值，选填参数 <br />
 time:20&nbsp;&nbsp;---&nbsp;&nbsp;配置cookie的默认过期时间是20天。可传入Date()格式时间（非时间戳）例如：new Date("2020-01-01")。选填参数，不填过期时间默认30天。 <br />
 path: "/api/"&nbsp;&nbsp;---&nbsp;&nbsp;配置cookie的默认路径是"/api/"路径. 选填参数，不填默认是"/"根路径。<br />
 domain: "hd.com"&nbsp;&nbsp;---&nbsp;&nbsp;配置cookie的默认domain是"hd.com"，选填参数，不填默认是当前域。
@@ -42,16 +42,16 @@ newCookie.setCookie("name4", 'sdf', { time: 3, path: "/app.html", domain: "local
 ```
 
 ### 2、对cookie的获取操作
-方法：getCookie(name)
+方法：getCookie(name)<br />
 参数1：name => cookie的key值
 ```
 newCookie.getCookie("name") ;
 ```
 
 ### 3、对cookie的获取出来的值做进一步筛选
-比如，一条cookie信息login是这样的"UID=59691532342341&UN=张三&TT=asdf8sd8fs9dfjsdfkjs9"，从中筛选出UID的值
-方法：getCookieName(cookie_name, name)
-参数1：cookie_name => cookie的key值
+比如，一条cookie信息login是这样的"UID=59691532342341&UN=张三&TT=asdf8sd8fs9dfjsdfkjs9"，从中筛选出UID的值<br />
+方法：getCookieName(cookie_name, name)<br />
+参数1：cookie_name => cookie的key值<br />
 参数2: 二级key值
 ```
 getCookieName("login", "UID") 
@@ -60,7 +60,7 @@ getCookieName("login", "UN")
 
 
 ### 3、对cookie的删除操作
-方法：delCookie(name)
+方法：delCookie(name)<br />
 参数1：name => cookie的key值
 ```
 delCookie("name2")
@@ -78,7 +78,7 @@ import Cookie, {
 } from "hd-cookie";
 ```
 解构出来的方法，都和旧版本相同，<br />
-相较于新版不同的点：
-1、旧版默认time是session，一个会话时间，
+相较于新版不同的点：<br />
+1、旧版默认time是session，一个会话时间，<br />
 2、旧版默认的path是当前的路径
 
