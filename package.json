@@ -1,6 +1,6 @@
 {
   "name": "hd-cookie",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "cookie的简易操作",
   "main": "index.js",
   "scripts": {

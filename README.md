@@ -7,7 +7,7 @@
 ## 使用过程
 
 npm install --save hd-cookie 或 yarn add hd-cookie 
-```
+```js
 import Cookie from "hd-cookie"
 ```
 
@@ -18,7 +18,7 @@ new Cookie(options)&nbsp;&nbsp;---&nbsp;&nbsp;options配置实例默认值，选
 time:20&nbsp;&nbsp;---&nbsp;&nbsp;配置cookie的默认过期时间是20天。可传入Date()格式时间（非时间戳）例如：new Date("2020-01-01")。选填参数，不填过期时间默认30天。 <br />
 path: "/api/"&nbsp;&nbsp;---&nbsp;&nbsp;配置cookie的默认路径是"/api/"路径. 选填参数，不填默认是"/"根路径。<br />
 domain: "hd.com"&nbsp;&nbsp;---&nbsp;&nbsp;配置cookie的默认domain是"hd.com"，选填参数，不填默认是当前域。
-```
+```js
 let newCookie = new Cookie({
       time: 20,   
       path: "/",
@@ -34,7 +34,7 @@ let newCookie = new Cookie({
       time: cookie的过期时间，不传取默认值。如果传过来的值是number类型，则以天计算。如果time的时间是Date格式的话，传多少就设置多少 <br />
       path: cookie的路径值，不传取默认值 <br />
       domain: cookie的域名 <br />
-```
+```js
 newCookie.setCookie('name', '张三') 
 newCookie.setCookie("name2", "lisi", { time: 3 }) 
 newCookie.setCookie("name3", "wangwu", { time: 3 , path: "/api/" }) ;
@@ -44,7 +44,7 @@ newCookie.setCookie("name4", 'sdf', { time: 3, path: "/app.html", domain: "local
 ### 2、对cookie的获取操作
 方法：getCookie(name)<br />
 参数1：name => cookie的key值
-```
+```js
 newCookie.getCookie("name") ;
 ```
 
@@ -53,7 +53,7 @@ newCookie.getCookie("name") ;
 方法：getCookieName(cookie_name, name)<br />
 参数1：cookie_name => cookie的key值<br />
 参数2: 二级key值
-```
+```js
 getCookieName("login", "UID") 
 getCookieName("login", "UN")
 ```
@@ -62,14 +62,14 @@ getCookieName("login", "UN")
 ### 3、对cookie的删除操作
 方法：delCookie(name)<br />
 参数1：name => cookie的key值
-```
+```js
 delCookie("name2")
 ```
 
 ## 更新描述
 更新了使用过程，使用更加灵活，更加安全。建议更新到最新版使用。<br />
 对于旧版的使用方式也做了兼容，对于旧项目，无需修改代码，也可以放心大胆的更新。兼容方式方式如下
-```
+```js
 import Cookie, {
   setCookie ,
   getCookie,
