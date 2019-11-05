@@ -82,5 +82,3 @@ import Cookie, {
 1、旧版默认time是session，一个会话时间，
 2、旧版默认的path是当前的路径
 
-
-
