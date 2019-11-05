@@ -14,7 +14,12 @@ import Cookie from "hd-cookie"
 ## 使用方法介绍
 
 提供了4种常用的方法：存储cookie ，获取cookie，获取二级cookie ，删除cookie 4中操作. <br /><br />
-new Cookie(options)   options配置实例默认值，$\color{#FF0000}{选填参数}\$ <br />
+new Cookie(options)   options配置实例默认值，$\color{#4285f4}{更}
+\color{#ea4335}{丰}
+\color{#fbbc05}{富}
+\color{#4285f4}{的}
+\color{#34a853}{颜}
+\color{#ea4335}{色}$ <br />
 time:20   配置cookie的默认过期时间是20天。可传入Date()格式时间（非时间戳）例如：new Date("2020-01-01")。选填参数，不填过期时间默认30天。 <br />
 path: "/api/"    配置cookie的默认路径是"/api/"路径. 选填参数，不填默认是"/"根路径。<br />
 domain: "hd.com"    配置cookie的默认domain是"hd.com"，选填参数，不填默认是当前域。
