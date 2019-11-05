@@ -107,16 +107,6 @@ class Cookie {
 
 
 
-
-
-
-
-
-
-
-
-
-
 /*********************************************兼容之前版本*********************************************************** */
 /**
  * 
@@ -203,5 +193,7 @@ Cookie.setCookie = setCookie ;
 Cookie.getCookie = getCookie ;
 Cookie.getCookieName = getCookieName ;
 Cookie.delCookie = delCookie ;
+
+
 
 module.exports = Cookie ;
