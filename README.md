@@ -1,5 +1,9 @@
 # cookie的简单操作
-
+```
+1、不依赖其他库
+2、只针对业务中经常使用的场景，代码简单，代码量少
+3、规避中文cookie导致的服务器不兼容问题
+```
 ## 使用过程
 
 npm install --save hd-cookie 或 yarn add hd-cookie

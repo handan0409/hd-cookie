@@ -13,7 +13,7 @@ const setCookie = (name, value, options) => {
 
   let cookieString = name + "=" + escape(value); // escape字符串加密(仅对中文加密)
 
-  if(!(options instanceof Object)){
+  if(!(options instanceof Object) || Array.isArray(options)){
     document.cookie = cookieString;
     return ;
   }
