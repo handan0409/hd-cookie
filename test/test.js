@@ -1,10 +1,18 @@
 
-import {
-  setCookie,
-  getCookie,
-  getCookieName,
-  delCookie,
+import Cookie, {
+  // setCookie ,
+  // getCookie,
+  // getCookieName,
+  // delCookie,
 } from "../index.js";
+
+let newCookie = new Cookie() ;
+
+var setCookie = newCookie.setCookie ;
+var getCookie = newCookie.getCookie ;
+var getCookieName = newCookie.getCookieName;
+var delCookie = newCookie.delCookie ;
+
 
 setCookie("login", "UID=596915259361234&UN=zhaopinqw01&TT=26bd8b06210ea3c301f3975sdf3fe")
 setCookie("name", "张三") ;
