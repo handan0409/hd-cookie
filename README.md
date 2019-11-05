@@ -13,11 +13,11 @@ import Cookie from "hd-cookie"
 
 ## 使用方法介绍
 
-提供了4种常用的方法：存储cookie ，获取cookie，获取二级cookie ，删除cookie 4中操作. <br /><br />
-new Cookie(options)   options配置实例默认值，$\color{#FF0000}{选填参数}\$ <br />
-time:20   配置cookie的默认过期时间是20天。可传入Date()格式时间（非时间戳）例如：new Date("2020-01-01")。选填参数，不填过期时间默认30天。 <br />
-path: "/api/"    配置cookie的默认路径是"/api/"路径. 选填参数，不填默认是"/"根路径。<br />
-domain: "hd.com"    配置cookie的默认domain是"hd.com"，选填参数，不填默认是当前域。
+提供了4种常用的方法：存储cookie ，获取cookie，获取二级cookie ，删除cookie 4中操作. <br />
+new Cookie(options)&nbsp;&nbsp;   options配置实例默认值，选填参数} <br />
+time:20&nbsp;&nbsp;配置cookie的默认过期时间是20天。可传入Date()格式时间（非时间戳）例如：new Date("2020-01-01")。选填参数，不填过期时间默认30天。 <br />
+path: "/api/"&nbsp;&nbsp;配置cookie的默认路径是"/api/"路径. 选填参数，不填默认是"/"根路径。<br />
+domain: "hd.com"&nbsp;&nbsp;配置cookie的默认domain是"hd.com"，选填参数，不填默认是当前域。
 ```
 let newCookie = new Cookie({
       time: 20,   
@@ -68,7 +68,7 @@ delCookie("name2")
 
 ## 更新描述
 更新了使用过程，使用更加灵活，更加安全。建议更新到最新版使用。<br />
-对于旧版的使用方式也做了兼容，$\color{#FF0000}{对于旧项目，无需修改代码，也可以放心大胆的更新。}\$兼容方式方式如下
+对于旧版的使用方式也做了兼容，对于旧项目，无需修改代码，也可以放心大胆的更新。兼容方式方式如下
 ```
 import Cookie, {
   setCookie ,
