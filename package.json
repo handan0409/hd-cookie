@@ -1,6 +1,6 @@
 {
   "name": "hd-cookie",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "cookie的简易操作",
   "main": "index.js",
   "scripts": {
@@ -12,8 +12,8 @@
     "url": "https://github.com/handan0409/hd-cookie"
   },
   "keywords": [
-    "handan",
-    "cookie"
+    "cookie",
+    "二级cookie"
   ],
   "author": "handan",
   "license": "MIT",

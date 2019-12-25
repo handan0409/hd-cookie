@@ -39,6 +39,9 @@ console.log(getCookie("name4")) ;
 setCookie("name5", "abc", [1,2,3])
 console.log(getCookie("name5")) ;
 
+// setCookie("name6", {name: "zhaoliu"}, [1,2,3])
+// console.log(getCookie("name6")) ;
+
 
 
 console.log(getCookieName("login", "UID"))
@@ -47,3 +50,25 @@ console.log(getCookieName("login", "UN"))
 delCookie("name2") ;
 
 console.log(getCookie("name2")) ;
+
+    // 错误捕获错误示例
+    try {
+      setTimeout(() => {
+        throw new Error("抛出一个错误")
+      }, 1000);
+    } catch (error) {
+      console.log(error)
+    }
+
+    // 正确捕获错误方式
+    try {
+      setTimeout(() => {
+        try {
+          throw new Error("抛出一个错误")
+        } catch (error) {
+          console.log("捕获到错误")
+        }
+      }, 1000);
+    } catch (error) {
+      console.log(error)
+    }
