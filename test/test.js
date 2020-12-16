@@ -42,8 +42,6 @@ console.log(getCookie("name5")) ;
 // setCookie("name6", {name: "zhaoliu"}, [1,2,3])
 // console.log(getCookie("name6")) ;
 
-
-
 console.log(getCookieName("login", "UID"))
 console.log(getCookieName("login", "UN"))
 
