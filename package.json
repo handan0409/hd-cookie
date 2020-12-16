@@ -1,11 +1,12 @@
 {
   "name": "hd-cookie",
-  "version": "1.0.3",
+  "version": "1.1.0",
   "description": "cookie的简易操作",
   "main": "index.js",
   "scripts": {
     "build": "webpack --config=./webpack.config.dev.js",
-    "start": "webpack-dev-server --config=./webpack.config.dev.js"
+    "start": "webpack-dev-server --config=./webpack.config.dev.js",
+    "babelBuild": "./node_modules/.bin/babel src --out-dir lib"
   },
   "repository": {
     "type": "git",
@@ -18,6 +19,10 @@
   "author": "handan",
   "license": "MIT",
   "devDependencies": {
+    "@babel/cli": "^7.12.10",
+    "@babel/core": "^7.12.10",
+    "@babel/preset-env": "^7.12.11",
+    "babel-loader": "^8.2.2",
     "html-webpack-plugin": "^3.2.0",
     "webpack": "^4.41.2",
     "webpack-cli": "^3.3.10",
